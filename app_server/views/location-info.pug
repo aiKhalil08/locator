@@ -1,0 +1,75 @@
+extends layout
+
+block content
+  .row.banner 
+    .col-12
+     h1 Alhaja Afusah's Buka
+  .row
+   .col-12.col-lg-9
+    .row
+     .col-12.col-md-6
+      p.rating
+       i.fas.fa-star
+       i.fas.fa-star
+       i.fas.fa-star
+       i.far.fa-star
+       i.far.fa-star
+      p.address Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, libero.
+      .card.text-white
+       .card-body
+        h4.card-title Opening hours
+        p.card-text Monday - Friday: 07:00am - 07:00pm
+        p.card-text Saturday: 08:00am - 05:00pm
+        p.card-text Sunday: closed
+      .card.text-white
+       .card-body
+        h4.card-title Facilities
+        .facilities.hstack.gap-1
+         span.badge.text-bg-warning
+          i.fa.fa-check
+          | &nbsp; Coffee
+         span.badge.text-bg-warning
+          i.fa.fa-check
+          | &nbsp; Amala
+         span.badge.text-bg-warning
+          i.fa.fa-check
+          | &nbsp; Poundo
+     .col-12.col-md-6
+      .card.text-white
+       .card-body 
+        h2.card-title Location map
+        #mapContainer(style="height: 300px; width: 100%")
+    .card
+     .card-body
+      h4.card-title
+       a(href="/location") Orient Restaurant
+       small &nbsp;
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.fas.fa-star
+        i.far.fa-star
+       span.badge.badge-default.rounded-pill.float-end 400m
+      p.address Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptas tempore. Tempore dolor sequi odio!
+      .facilities.hstack.gap-1
+       span.badge.text-bg-warning Noodles
+       span.badge.text-bg-warning Ramen
+       span.badge.text-bg-warning Rice pudding
+    .card
+     .card-body
+      h4.card-title
+       a(href="/location") Occidental Cafe
+       small &nbsp;
+        i.fas.fa-star
+        i.fas.fa-star
+        i.far.fa-star
+        i.far.fa-star
+        i.far.fa-star
+       span.badge.badge-default.rounded-pill.float-end 180m
+      p.address Lorem ipsum dolor sit amet consectetur
+      .facilities.hstack.gap-1
+       span.badge.text-bg-warning Coffee
+       span.badge.text-bg-warning Buger
+       span.badge.text-bg-warning Pizza
+   .col-12.col-md-4
+    p.lead Locator helps you find restaurants near you when you are out and about. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, cum.
